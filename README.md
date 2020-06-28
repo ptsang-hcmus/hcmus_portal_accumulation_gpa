@@ -4,17 +4,17 @@
 
 ### Lưu ý:
 - Kết quả dùng để tham khảo thôi
-- Nếu cần chính xác tuyệt đối ---> **lên phòng đào tạo cho chắc**
+- Nếu cần chính xác tuyệt đối &rarr; **lên phòng đào tạo cho chắc**
 
 ### Cách xài:
 - Đăng nhập portal
-- Chọn **Quản lý học tập** ---> **Tra cứu kết quả học tập**
+- Chọn **Quản lý học tập** &rarr; **Tra cứu kết quả học tập**
 - Chỗ **Năm Học** chọn **--Tất cả--** và nhấn **Xem Kết Quả Học Tập**
-- Nhấn **F12**, chọn thẻ **Console**, copy tất cả script bên dưới và dán vào trong **Console** và nhấn **Enter**
+- Nhấn <kbd>F12</kbd> &rarr; chọn thẻ **Console** &rarr; copy tất cả script bên dưới và dán vào trong **Console** và nhấn **Enter**
 - Kết quả nằm bên dưới bao gồm số **tín chỉ tích lũy**, số điểm **trung bình tích lũy**
 - **Nếu** bạn có môn đã học cải thiện dưới tên khác (cũng là môn ban đầu nhưng khác tên một chút)
----> copy **tên môn học cải thiện cũ** vào trong danh sách `notCount`
-    - Ví dụ: bạn học cải thiện môn với tên cũ **CTT306 - Máy học** ---> tên mới **CSC14005 - Nhập môn máy học** <br> thì `let notCount = ["CTT306 - Máy học"],`
+&rarr; copy **tên môn học cải thiện cũ** vào trong danh sách `notCount`
+    - Ví dụ: bạn học cải thiện môn với tên cũ **CTT306 - Máy học** &rarr; tên mới **CSC14005 - Nhập môn máy học** <br> thì `let notCount = ["CTT306 - Máy học"],`
     ```javascript
     let notCount = [],
         notMatterInGPA = [
