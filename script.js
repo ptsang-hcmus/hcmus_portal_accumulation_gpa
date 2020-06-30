@@ -1,5 +1,4 @@
-
-let notCount = [],
+var notCount = [],
     notMatterInGPA = [
         "QPH010 - Giáo dục quốc phòng",
         "TCH001 - Thể dục 1",
@@ -40,7 +39,7 @@ function round(e, t = 2) {
     const o = Math.pow(10, t);
     return Math.round(e * o) / o;
 }
-console.log("Tín chỉ tích lũy:", accumulationCredit);
-console.log("Tín chỉ tính điểm (0 gồm quốc phòng, thể dục):", totalCredit);
+console.log("Tín chỉ tích lũy (có tính quốc phòng và thể dục):", accumulationCredit);
+console.log("Tín chỉ tính điểm (ko tính quốc phòng, thể dục):", totalCredit);
 console.log("GPA tích lũy:", totalScore / totalCredit);
 console.log("GPA tích lũy khi tốt nghiệp:", round(totalScore / totalCredit));
