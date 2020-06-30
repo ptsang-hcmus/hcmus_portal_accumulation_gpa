@@ -16,7 +16,7 @@
 &rarr; copy **tên môn học cải thiện cũ** vào trong danh sách `notCount`
     - Ví dụ: bạn học cải thiện môn với tên cũ **CTT306 - Máy học** &rarr; tên mới **CSC14005 - Nhập môn máy học** <br> thì `let notCount = ["CTT306 - Máy học"],`
     ```javascript
-    let notCount = [],
+    var notCount = [],
         notMatterInGPA = [
             "QPH010 - Giáo dục quốc phòng",
             "TCH001 - Thể dục 1",
@@ -57,8 +57,8 @@
         const o = Math.pow(10, t);
         return Math.round(e * o) / o;
     }
-    console.log("Tín chỉ tích lũy:", accumulationCredit);
-    console.log("Tín chỉ tính điểm (0 gồm quốc phòng, thể dục):", totalCredit);
+    console.log("Tín chỉ tích lũy (có tính quốc phòng và thể dục):", accumulationCredit);
+    console.log("Tín chỉ tính điểm (ko tính quốc phòng, thể dục):", totalCredit);
     console.log("GPA tích lũy:", totalScore / totalCredit);
     console.log("GPA tích lũy khi tốt nghiệp:", round(totalScore / totalCredit));
     ```
