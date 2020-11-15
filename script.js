@@ -1,9 +1,9 @@
-var notCount = [],
-    notMatterInGPA = [
+var notCount = new Set([]),
+    notMatterInGPA = new Set([
         "QPH010 - Giáo dục quốc phòng",
         "TCH001 - Thể dục 1",
         "TCH002 - Thể dục 2",
-    ],
+    ]),
     list = document.getElementById("tbDiemThiGK").getElementsByTagName("tbody")[0]
         .childNodes,
     courses = [...list]
@@ -19,7 +19,7 @@ var notCount = [],
                 }
             )
         )
-        .filter((e) => e.Grade >= 5 && !notCount.includes(e.CourseName))
+        .filter((e) => e.Grade >= 5 && !notCount.has(e.CourseName))
         .sort(
             (e, t) =>
                 e.CourseName > t.CourseName ||
@@ -31,7 +31,7 @@ var notCount = [],
 for (let i = 0; i < courses.length; i++) {
     if (i > 0 && courses[i - 1].CourseName == courses[i].CourseName) continue;
     accumulationCredit += courses[i].Credit;
-    if (notMatterInGPA.includes(courses[i].CourseName)) continue;
+    if (notMatterInGPA.has(courses[i].CourseName)) continue;
     totalCredit += courses[i].Credit;
     totalScore += courses[i].Credit * courses[i].Grade;
 }
